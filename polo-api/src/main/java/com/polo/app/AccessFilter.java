@@ -42,7 +42,7 @@ public class AccessFilter extends ZuulFilter{
                 return null;
             }
         }catch (Exception ex){
-
+            return null;
         }
 
         return null;

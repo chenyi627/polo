@@ -20,6 +20,7 @@ import org.springframework.cloud.netflix.feign.EnableFeignClients;
 import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
@@ -44,7 +45,7 @@ import org.springframework.web.filter.CharacterEncodingFilter;
 @EnableTransactionManagement
 @EnableCircuitBreaker
 @ServletComponentScan({"com.polo"})
-//@Configuration
+@Configuration
 public class App {
     public static void main(String[] args) {
         SpringApplication.run(App.class, args);
